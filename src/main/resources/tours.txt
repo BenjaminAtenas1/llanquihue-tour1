@@ -1,0 +1,5 @@
+Puerto Montt;4;100000
+Viña del Mar;6;120000
+Santiago;4;80000
+La Serena;8;200000
+Temuco;5;150000
