@@ -78,5 +78,11 @@ public class Main {
             System.out.println("Tour asignado al cliente no existe.");
         }
 
+        //A continuación lo implementado en la semana 6
+        GestorDatos datosServicios = new GestorDatos();
+        System.out.println("\n>SERVICIOS TURISTICOS<");
+        System.out.println("A continuación se mostarán los servicios turísticos disponibles:\n");
+        datosServicios.verServicioTuristico();
+
     }
 }

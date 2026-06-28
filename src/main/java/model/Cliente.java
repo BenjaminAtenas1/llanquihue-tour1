@@ -10,11 +10,6 @@ public class Cliente extends Persona{
 
     }
 
-    public Cliente(int idCliente, String tourElegido) {
-        this.idCliente = idCliente;
-        this.tourElegido = tourElegido;
-    }
-
     public Cliente(String nombreCompleto, String rut, int idCliente, String tourElegido) {
         super(nombreCompleto, rut);
         this.idCliente = idCliente;
@@ -22,18 +17,22 @@ public class Cliente extends Persona{
     }
 
     public int getIdCliente() {
+
         return idCliente;
     }
 
     public void setIdCliente(int idCliente) {
+
         this.idCliente = idCliente;
     }
 
     public String getTourElegido() {
+
         return tourElegido;
     }
 
     public void setTourElegido(String tourElegido) {
+
         this.tourElegido = tourElegido;
     }
 
