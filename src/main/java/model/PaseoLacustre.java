@@ -16,7 +16,16 @@ public class PaseoLacustre extends ServicioTuristico{
         this.tipoEmbarcacion = tipoEmbarcacion;
     }
     @Override
+    public void mostrarInformacion(){
+        //Se pone un mensaje distinto para mostrar que a pesar de que el metodo se llama igual, se puede ejecutar distinto segun la clase.
+        System.out.println("\nInformación sobre tour de paseo lacustre:");
+        System.out.println("El paseo lacustre consiste en navegar en algun tipo de embarcación.");
+        System.out.println("Nombre tour: " + nombre);
+        System.out.println("Duración de horas: " + duracionHoras);
+        System.out.println("Tipo de embarcación: " + tipoEmbarcacion);
+    }
+    @Override
     public String toString(){
-        return "Nombre servicio: " + getNombre() + " | Duración (horas): " + getDuracionHoras() + " | Tipo de embarcación: " + tipoEmbarcacion;
+        return "Nombre servicio: " + nombre + " | Duración (horas): " + duracionHoras + " | Tipo de embarcación: " + tipoEmbarcacion;
     }
 }

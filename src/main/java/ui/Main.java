@@ -1,7 +1,10 @@
 package ui;
 
 import data.GestorDatos;
+import data.GestorServicios;
 import model.Cliente;
+import model.RutaGastronomica;
+import model.ServicioTuristico;
 import model.Tour;
 
 public class Main {
@@ -84,5 +87,11 @@ public class Main {
         System.out.println("A continuación se mostarán los servicios turísticos disponibles:\n");
         datosServicios.verServicioTuristico();
 
-    }
+        //Semana 7
+        GestorServicios datosS7 = new GestorServicios();
+        System.out.println("\nInformación sobre los distintos servicios turísticos:");
+        datosS7.verServicioTuristico2();
+
+        }
 }
+

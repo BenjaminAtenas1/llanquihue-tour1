@@ -16,7 +16,16 @@ public class RutaGastronomica extends ServicioTuristico{
         this.numeroDeParadas = numeroDeParadas;
     }
     @Override
+    public void mostrarInformacion(){
+        //Se pone un mensaje distinto para mostrar que a pesar de que el metodo se llama igual, se puede ejecutar distinto segun la clase.
+        System.out.println("\nInformación sobre tour de ruta gastronómica:");
+        System.out.println("El tour gastronómico consiste en probar comidas de todo el mundo.");
+        System.out.println("Nombre tour: " + nombre);
+        System.out.println("Duración de horas: " + duracionHoras);
+        System.out.println("Número de paradas: " + numeroDeParadas);
+    }
+    @Override
     public String toString(){
-        return "Nombre servicio: " + getNombre() + " | Duración (horas): " + getDuracionHoras() + " | Paradas: " + numeroDeParadas;
+        return "Nombre servicio: " + nombre + " | Duración (horas): " + duracionHoras + " | Paradas: " + numeroDeParadas;
     }
 }

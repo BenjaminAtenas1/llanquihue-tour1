@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class GestorDatos {
     private ArrayList<Tour> listaTours;
@@ -58,18 +59,17 @@ public class GestorDatos {
         }
     }
 
-    //Agregado para tareas semana 6
+    //A gregado para tareas semana 6
     //A continuación se muestra aplicacines de polimorfismo correspondiente a lo trabajado en la semana 6.
-
     public void verServicioTuristico(){
-        ArrayList<ServicioTuristico> listaServiciosTuristicos = new ArrayList<>();
+        List<ServicioTuristico> listaServiciosTuristicos = new ArrayList<>();
 
         //Dos objetos de la subclase RutaGastronomica
         listaServiciosTuristicos.add(new RutaGastronomica("Ruta Asiatica", 4, 3));
         listaServiciosTuristicos.add(new RutaGastronomica("Ruta Chilena", 4, 4));
 
         //Dos objetos de la subclase Paseo Lacustre
-        listaServiciosTuristicos.add(new PaseoLacustre("Paseo en la Pinta", 2, "Carabelas"));
+        listaServiciosTuristicos.add(new PaseoLacustre("Paseo en la Pinta", 2, "Carabela"));
         listaServiciosTuristicos.add(new PaseoLacustre("Paseo en la Esmeralda", 3, "Corbeta"));
 
         //Dos objetos de la subclase Excursión Cultural
