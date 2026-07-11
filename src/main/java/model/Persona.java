@@ -1,8 +1,8 @@
 package model;
 
 public class Persona {
-    private String nombreCompleto;
-    private String rut;
+    protected String nombreCompleto;
+    protected String rut;
 
     public Persona(){
 

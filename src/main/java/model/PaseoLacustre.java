@@ -1,6 +1,8 @@
 package model;
 
-public class PaseoLacustre extends ServicioTuristico{
+import javax.swing.*;
+
+public class PaseoLacustre extends ServicioTuristico implements Registrable{
     private String tipoEmbarcacion;
 
     public PaseoLacustre(){
@@ -23,6 +25,27 @@ public class PaseoLacustre extends ServicioTuristico{
         System.out.println("Nombre tour: " + nombre);
         System.out.println("Duración de horas: " + duracionHoras);
         System.out.println("Tipo de embarcación: " + tipoEmbarcacion);
+    }
+
+    @Override
+    public void mostrarResumen(){
+        JFrame ventanaInformacion = new JFrame("Información Paseos Lacustres");
+        ventanaInformacion.setSize(400, 370);
+        ventanaInformacion.setLayout(null);
+        ventanaInformacion.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+        JTextArea area = new JTextArea();
+        JScrollPane scroll = new JScrollPane(area);
+        scroll.setBounds(10,50,360,260);
+        ventanaInformacion.add(scroll);
+
+        area.setText("Nombre servicio: " + nombre + " | Duración (horas): "
+                + duracionHoras + " | Tipo de embarcación: " + tipoEmbarcacion);
+
+        ventanaInformacion.setLocationRelativeTo(null);
+        ventanaInformacion.setVisible(true);
+        area.setEditable(false);
+        area.setFocusable(false);
     }
     @Override
     public String toString(){

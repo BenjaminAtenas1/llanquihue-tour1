@@ -1,6 +1,8 @@
 package model;
 
-public class RutaGastronomica extends ServicioTuristico{
+import javax.swing.*;
+
+public class RutaGastronomica extends ServicioTuristico implements Registrable{
     private int numeroDeParadas;
 
     public RutaGastronomica(){
@@ -24,6 +26,29 @@ public class RutaGastronomica extends ServicioTuristico{
         System.out.println("Duración de horas: " + duracionHoras);
         System.out.println("Número de paradas: " + numeroDeParadas);
     }
+
+    @Override
+    public void mostrarResumen(){
+        JFrame ventanaInformacion = new JFrame("Información Ruta Gastronómica");
+        ventanaInformacion.setSize(400, 370);
+        ventanaInformacion.setLayout(null);
+        ventanaInformacion.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+        JTextArea area = new JTextArea();
+        JScrollPane scroll = new JScrollPane(area);
+        scroll.setBounds(10,50,360,260);
+        ventanaInformacion.add(scroll);
+
+        area.setText("Nombre servicio: " + nombre + " | Duración (horas): "
+                + duracionHoras + " | Paradas: " + numeroDeParadas);
+
+        ventanaInformacion.setLocationRelativeTo(null);
+        ventanaInformacion.setVisible(true);
+        area.setEditable(false);
+        area.setFocusable(false);
+    }
+
+
     @Override
     public String toString(){
         return "Nombre servicio: " + nombre + " | Duración (horas): " + duracionHoras + " | Paradas: " + numeroDeParadas;
