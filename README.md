@@ -1,11 +1,11 @@
-🧠 Tarea Semana 7 – Desarrollo Orientado a Objetos I
+🧠 Tarea Semana 8 – Desarrollo Orientado a Objetos I
 
 👤 Autor del proyecto
 Nombre completo: Benjamin Atenas
 Carrera: Analista Programador Computacional. Sede: Online
 
 📘 Proyecto que muestra la implementación de los fundamentos de la programación orientada a objetos a través de un ejemplo con una agencia turística.
-Esta semana se han implementado nuevas características del polimorfismo estudiadas esta semana 7. Se ha agregado a la clase "GestorServicios", para así mostrar un nuevo método implementado llamado "mostrarInformacion". Y este método será distinto para cada subclase de "ServicioTuristico" a pesar de llamarse igual en todas, aprovechando así las características del polimorfismo.
+Esta semana se ha implementado una interfaz gráfica para que el usuario pueda registrar información. Se ha creado una interfaz para condicionar a las clases que lo implementan a cumplir con sus condiciones y se usa un "instanceof" para que el sistema actue según la clase a la que se está llamando.
 
 🧱 Estructura general del proyecto (Ubicado en la carpeta scr/main/java)
 
@@ -15,9 +15,10 @@ Esta semana se han implementado nuevas características del polimorfismo estudia
 
 ├── java/
 
-├── data/ # Clase que gestiona los datos (GestosDatos, GestorServicios).
+├── data/ # Clase que gestiona los datos (GestosDatos, GestorServicios, GestorEntidades).
 
-├── model/ # Clases de dominio (Tour, Persona, Cliente, ServicioTuristico, RutaGastronomica, PaseoLacustre, ExcursionCultural).
+├── model/ # Clases de dominio (Tour, Persona, Cliente, ServicioTuristico, RutaGastronomica, PaseoLacustre, ExcursionCultural, GuiaTuristico, Jefe,
+Registrable).
 
 ├── ui/ # Clase main para ejecutar el programa (Main).
 
@@ -33,6 +34,6 @@ Esta semana se han implementado nuevas características del polimorfismo estudia
 
 Repositorio GitHub: https://github.com/BenjaminAtenas1/llanquihue-tour1
 
-Fecha de entrega: 04-07-2026
+Fecha de entrega: 12-07-2026
 
-© Duoc UC | Escuela de Informática y Telecomunicaciones | Actividad Formativa 5: Aplicación de sobreescritura y polimorfismo en jerarquías.
+© Duoc UC | Escuela de Informática y Telecomunicaciones | Actividad Sumativa 3: Interfaces e integración con colecciones genéricas.
